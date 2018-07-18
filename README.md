@@ -20,7 +20,7 @@ Within the Tokamak context, you can write synchronous-looking code as usual, and
 final int userId = 42;
 // User.fetchName returns a CompletionStage<String>
 final String userName = await(User.fetchName(userId));
-// User.fetchName returns a CompletionStage<Integer>
+// User.fetchAge returns a CompletionStage<Integer>
 final int userAge = await(User.fetchAge(userId));
 
 System.out.printf("User %s has age %d%n", userName, userAge);
